@@ -6,7 +6,6 @@
 typedef struct
 {
 	const char* root_path;
-	const char* root_file_path;
 } app_data_t;
 
 void app_init(int argc, char** argv);

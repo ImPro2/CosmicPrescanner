@@ -61,3 +61,14 @@ void dynamic_list_alloc(dynamic_list_t* l)
 	}
 }
 
+bool dynamic_list_contains(dynamic_list_t* l, void* element)
+{
+	for (int i = 0; i < l->count; i++)
+	{
+		if (l->elements[i] == element)
+			return true;
+	}
+
+	return false;
+}
+
